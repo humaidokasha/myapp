@@ -1,0 +1,292 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<div  class="container-fluid"> 
+	
+	<div class="row" style="background-color:#000000; height:140px; ">
+		<div class="col-lg-2" id="options">
+			
+			<div class="form-group">
+				<label for="id1"style="color:#FFFFFF;" >Hotels</label>
+				<select  class="form-control" id="id1" > 
+					<option disabled>Select location</option>	
+					<option>Nagpur</option>
+					<option>New Delhi</option>
+					<option>Mumbai</option>
+					<option>Dharmshala</option>
+					<option>Mohali</option>	
+				</select>	
+				
+				</div>
+		</div>
+		<div class="col-lg-2">
+		<form role="form">
+			<label for="id1" style="color:#FFFFFF;">Checkin</label><br />
+			<input type="date" id="birthday" name="birthday" size="20" />
+			
+			</form>
+		
+		</div>
+		<div class="col-lg-2">
+		<form role="form">
+			<label for="id1" style="color:#FFFFFF;">Checkout</label><br />
+			<input type="date" id="birthday" name="birthday" size="20" />
+			
+			</form>
+		
+		</div>
+		<div class="col-lg-2" id="options">
+				<div class="form-group">
+				<label for="idnt" style="color:#FFFFFF;" >Rooms</label>
+				<select  class="form-control" id="idnt" > 
+					<option disabled>select rooms</option>	
+					<option>Classic king room</option>
+					<option>siute</option>
+					<option>presidential suite</option>
+					<option>delux Twin Room</option>
+						
+				</select>
+				</div>
+		</div>
+		<div class="col-lg-1" id="options">
+		<div class="form-group">
+		<label for="id1" style="color:#FFFFFF;" >Persons</label>
+			<select  class="form-control" id="id1" > 
+					<option disabled>0</option>	
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>	
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+						
+				</select>	
+				</div>
+		</div>
+		<div class="col-lg-1" id="options">
+		<div class="form-group">
+				<label for="idnr" style="color:#FFFFFF;">No Of Rooms</label>
+			<select  class="form-control" id="idnr" > 
+					<option disabled>0</option>	
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>	
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+						
+				</select>
+				</div>	
+		</div>
+		
+	<div class="col-lg-2" id="options">
+				
+		<div class="form-group">
+				<label for="id1" style="color:#FFFFFF;" >Nationality</label>
+			<select  class="form-control" id="id1" > 
+					<option disabled>select</option>	
+					<option>India</option>
+					<option>Pakistan</option>
+					<option>Newzeland</option>
+					<option>Australia</option>
+					<option>Srilanka</option>	
+					<option>England</option>
+					<option>Southafrica</option>
+					<option>Westindies</option>
+				
+						
+				</select>	
+		</div>
+		</div>
+	
+	<div class="col-lg-12">
+	<div class="col-xs-offset-5 col-lg-2" >
+	<a href="#demo" class="btn btn-info"  target="#demo" data-toggle="collapse">Check Availability</a>
+	</div>
+	</div>
+
+</div>
+
+</div>
+
+	<div class="container-fluid" id="section1" style="padding:0px;">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+   
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  
+    <div class="item active">
+      <img  src="images/hotel.jpg" width="100%"  alt="Chania">
+    </div>
+
+   
+
+    <div class="item">
+      <img  src="images/SetWidth1700-KIBKK1-Overview-Lobby-Night-time.jpg" width="100%"  alt="Flower">
+    </div>
+
+   
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	
+	
+	
+	
+	
+	</div>
+
+
+<div class="container-fluid" id ="section2">
+	<div class="container">
+	  
+	  
+	  <div id="demo" class="collapse ">
+	  <h2>Reservation Available</h2>
+	<p>	we also have exclusive Icc offers  if you want to avail it click on "offer" else click on "continue".<a href="#demo #demo1" class="btn btn-info" data-toggle="collapse">Offer</a>
+	 <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Continue</button></p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <h2>Pricing:</h2>
+		<p class="list-group-item" >Rooms:<input type="text" class="form-control" id="ro"></p>
+		<p class="list-group-item" >No.of Rooms:<input type="text" class="form-control" id="nro"></p>
+		<p class="list-group-item" >Total Cost:<input type="text" class="form-control" id="tc"></p>
+		<p class="list-group-item" > Tax:<input type="text" class="form-control" id="tax"></p>
+		<p class="list-group-item" id="gt">Grand total:<input type="text" class="form-control" id="gt"> </p>
+     <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+      
+    </div>
+  </div>
+	 
+	 
+	  </div> 
+</div>
+
+<div class="container" style="max-width:980px;">
+<div class="row collapse" id ="demo1">
+
+<div class="col-lg-4">
+<ul class="list-group">
+  <li class="list-group-item"><h2>DATE</h2></li>
+  <li class="list-group-item">15 March 2016 </li>
+  <li class="list-group-item">16 March 2016</li>
+   <li class="list-group-item">16 March 2016</li>
+  <li class="list-group-item">17 March 2016</li>
+  <li class="list-group-item">18 March 2016</li>
+   <li class="list-group-item">18 March 2016</li>
+  <li class="list-group-item">19 March 2016</li>
+   <li class="list-group-item">20 March 2016</li>
+  <li class="list-group-item">20 March 2016</li>
+  <li class="list-group-item">21 March 2016</li>
+  <li class="list-group-item">22 March 2016</li>
+  <li class="list-group-item">23 March 2016</li>
+   <li class="list-group-item">23 March 2016</li>
+  <li class="list-group-item">25 March 2016</li>
+  <li class="list-group-item">25 March 2016</li>
+  <li class="list-group-item">26 March 2016</li>
+  <li class="list-group-item">26 March 2016</li>
+   <li class="list-group-item">27 March 2016</li>
+  <li class="list-group-item">27 March 2016</li>
+  <li class="list-group-item">28 March 2016</li>
+  <li class="list-group-item">30 March 2016</li>
+  <li class="list-group-item">31 March 2016</li>
+   <li class="list-group-item">03 April 2016</li>
+
+</ul>
+</div>
+<div class="col-lg-4">
+<ul class="list-group">
+  <li class="list-group-item"><h2>TEAMS</h2></li>
+  <li class="list-group-item">IND VS NZ </li>
+  <li class="list-group-item">WI VS ENG</li>
+   <li class="list-group-item">PAK VS Q1A</li>
+  <li class="list-group-item">SL VS Q1B</li>
+  <li class="list-group-item">AUS VS NZ</li>
+   <li class="list-group-item">RSA VS ENG</li>
+<li class="list-group-item">PAK VS IND</li>
+ <li class="list-group-item">RSA VS Q1B</li>
+  <li class="list-group-item">SL VS WI</li>
+   <li class="list-group-item">AUS VS Q1A</li>
+  <li class="list-group-item">PAK VS NZ</li>
+  <li class="list-group-item">ENG VS Q1B</li>
+  <li class="list-group-item">IND VS Q1A</li>
+  <li class="list-group-item">PAK VS AUS</li>
+   <li class="list-group-item">RSA VS WI</li>
+  <li class="list-group-item">NZ VS Q1A</li>
+  <li class="list-group-item">ENG VS SL</li>
+  <li class="list-group-item">IND VS AUS</li>
+  <li class="list-group-item">WI VS Q1B</li>
+   <li class="list-group-item">RSA VS SL</li>
+  <li class="list-group-item">1ST SEMI FINAL</li>
+  <li class="list-group-item">2ND SEMI FINAL</li>
+  <li class="list-group-item">FINAL</li>
+  
+</ul>
+</div>
+<div class="col-lg-4">
+<ul class="list-group">
+  <li class="list-group-item"><h2>Date</h2></li>
+  <li class="list-group-item">NAGPUR </li>
+  <li class="list-group-item">MUMBAI</li>
+   <li class="list-group-item">KOLKATA</li>
+  <li class="list-group-item">KOLKATA</li>
+  <li class="list-group-item">DHARAMSALA</li>
+   <li class="list-group-item">MUMBAI</li>
+  <li class="list-group-item">DHARAMSALA</li>
+   <li class="list-group-item">MUMBAI</li>
+  <li class="list-group-item">BENGALURU</li>
+  <li class="list-group-item">BENGALURU</li>
+  <li class="list-group-item">MOHALI</li>
+  <li class="list-group-item">NEW DELHI</li>
+   <li class="list-group-item">BENGALURU</li>
+  <li class="list-group-item">MOHALI</li>
+  <li class="list-group-item">NAGPUR</li>
+  <li class="list-group-item">KOLKATA</li>
+  <li class="list-group-item">NEW DELHI</li>
+   <li class="list-group-item">MOHALI</li>
+  <li class="list-group-item">NAGPUR</li>
+  <li class="list-group-item">NEW DELIHI</li>
+  <li class="list-group-item">NEW DELHI</li>
+  <li class="list-group-item">MUMBAI</li>
+   <li class="list-group-item">KOLKATA</li>
+  </ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+{% endblock %}

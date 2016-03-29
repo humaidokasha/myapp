@@ -1,0 +1,39 @@
+<?php
+
+
+if($_POST['submit'])
+{
+	$chatuser=$_SESSION['userid'];
+	$chattext=$_POST['chattext'];
+	insertdata($chatuser,$chattext);
+	
+	}
+
+function connect(){
+	$conn = mysqli_connect("localhost","root","","chat");
+	if($conn){
+		return $conn;
+	}
+	return false;
+}
+
+function insertdata($chatuser,$chattext){
+	$con = connect();
+	$sql = "INSERT INTO  Chat_tb(chatuserid,chattext) VALUES('$chatuser','$chattext')";
+	if($con){
+		if ($con->query($sql)) {
+			echo "<script type='text/javascript'>alert('Check your name and password');</script>";
+			}
+			else {
+				echo "Error: " . $sql . "<br>" . $con->error;
+			}
+		$con->close();
+	}
+}
+
+
+
+
+
+
+?> */
